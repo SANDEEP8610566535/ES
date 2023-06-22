@@ -1,0 +1,15 @@
+#include<AT89S52.h>
+void wait(int);
+void main(){
+char data=0xAA;
+while(1){
+P0=data;
+wait(1);
+P0=(data<<1)|(data>>7);
+wait(1);
+}
+}
+void wait(int ap){
+int a;
+for(a=0;a<50;a++);
+}
