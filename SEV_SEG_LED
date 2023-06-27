@@ -1,0 +1,9 @@
+#include <AT89S52.h>
+#define SEV_SEG P0
+void main ()
+{
+ SEV_SEG=0x99;
+ while(1){
+}
+
+}
